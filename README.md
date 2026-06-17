@@ -1,5 +1,7 @@
 # Regime Guard CMC Strategy
 
+![Regime Guard CMC Strategy logo](docs/assets/regime-guard-logo.svg)
+
 Track 2 entry for **BNB Hack: AI Trading Agent Edition - CoinMarketCap x Trust Wallet**.
 
 Regime Guard is a CoinMarketCap Strategy Skill that turns CMC market, technical, derivatives, sentiment, and liquidity data into a backtestable BNB Chain spot-rotation strategy. It does not custody funds or execute trades. It produces transparent strategy reports that can later be routed into Trust Wallet Agent Kit for Track 1 execution.
@@ -95,4 +97,3 @@ This repo intentionally keeps Track 2 non-executing so the submitted Skill is sa
 ## Disclaimer
 
 This is hackathon software and a strategy research artifact, not financial advice. Live trading can lose money.
-
