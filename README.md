@@ -1,6 +1,6 @@
 # Regime Guard CMC Strategy
 
-![Regime Guard CMC Strategy logo](docs/assets/regime-guard-logo.svg)
+![Regime Guard CMC Strategy logo](docs/assets/regime-guard-logo-480.png)
 
 Track 2 entry for **BNB Hack: AI Trading Agent Edition - CoinMarketCap x Trust Wallet**.
 
