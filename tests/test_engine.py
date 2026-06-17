@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from regime_guard.engine import analyze_snapshot, market_regime, score_asset
+from regime_guard.engine import ELIGIBLE_TOKENS, analyze_snapshot, market_regime, score_asset
 
 
 class EngineTest(unittest.TestCase):
@@ -26,6 +26,11 @@ class EngineTest(unittest.TestCase):
         self.assertEqual(signal.action, "AVOID")
         self.assertEqual(signal.target_weight_pct, 0)
 
+    def test_official_hackathon_universe_includes_long_tail_tokens(self):
+        self.assertIn("USD1", ELIGIBLE_TOKENS)
+        self.assertIn("ZAMA", ELIGIBLE_TOKENS)
+        self.assertIn("币安人生", ELIGIBLE_TOKENS)
+
     def test_sample_snapshot_generates_allocations_and_stable_reserve(self):
         sample = json.loads((ROOT / "data" / "sample_market_snapshot.json").read_text())
         report = analyze_snapshot(sample)
@@ -37,4 +42,3 @@ class EngineTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-

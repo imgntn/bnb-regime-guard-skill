@@ -77,19 +77,18 @@ Open `docs/index.html` for the static demo. Generate fresh local reports with th
 
 ## Repository Link
 
-TODO: Add GitHub/GitLab/Bitbucket URL after publishing this folder.
+https://github.com/imgntn/bnb-regime-guard-skill
 
 ## Video Link
 
-TODO: Add demo video link if recorded.
+Not included. The repository includes a static demo page at `docs/index.html` and reproducible CLI commands for generating the strategy report and backtest.
 
 ## Submission Checklist
 
-- Public repo link: TODO.
+- Public repo link: https://github.com/imgntn/bnb-regime-guard-skill
 - Skill file included: yes.
 - Strategy spec included: `submission/STRATEGY_SPEC.md`.
 - Reproducible setup instructions: yes.
 - Demo page: `docs/index.html`.
 - Tests: `python -m unittest discover -s tests`.
 - Track 1 on-chain proof: not applicable for Track 2.
-

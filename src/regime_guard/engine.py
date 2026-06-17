@@ -7,10 +7,21 @@ from typing import Any
 
 ELIGIBLE_TOKENS = {
     "ETH", "USDT", "USDC", "XRP", "TRX", "DOGE", "ZEC", "ADA", "LINK", "BCH",
-    "DAI", "LTC", "AVAX", "SHIB", "DOT", "UNI", "ETC", "AAVE", "ATOM", "FIL",
-    "INJ", "FET", "BONK", "PENGU", "CAKE", "ZRO", "FDUSD", "FLOKI", "LDO",
-    "PENDLE", "AXS", "TWT", "COMP", "BAT", "APE", "SFP", "1INCH", "SNX",
-    "FRAX", "YFI", "ZIL", "ZETA", "ROSE", "KAVA", "SUSHI", "BNB",
+    "DAI", "TON", "USD1", "USDE", "M", "LTC", "AVAX", "SHIB", "XAUT", "WLFI",
+    "H", "DOT", "UNI", "ASTER", "DEXE", "USDD", "ETC", "AAVE", "ATOM", "U",
+    "STABLE", "FIL", "INJ", "币安人生", "NIGHT", "FET", "TUSD", "BONK", "PENGU",
+    "CAKE", "SIREN", "LUNC", "ZRO", "KITE", "FDUSD", "BEAT", "PIEVERSE", "BTT",
+    "NFT", "EDGE", "FLOKI", "LDO", "B", "FF", "PENDLE", "NEX", "STG", "AXS",
+    "TWT", "HOME", "RAY", "COMP", "GWEI", "XCN", "GENIUS", "XPL", "BAT",
+    "SKYAI", "APE", "IP", "SFP", "TAG", "NXPC", "AB", "SAHARA", "1INCH",
+    "CHEEMS", "BANANAS31", "RIVER", "MYX", "RAVE", "SNX", "FORM", "LAB", "HTX",
+    "USDF", "CTM", "BDX", "SLX", "UB", "DUCKY", "FRAX", "BILL", "WFI", "KOGE",
+    "ALE", "FRXUSD", "GOMINING", "VCNT", "GUA", "DUSD", "SMILEK", "0G", "BEAM",
+    "MY", "SOON", "REAL", "Q", "AIOZ", "ZIG", "YFI", "TAC", "LISUSD", "CYS",
+    "ZAMA", "TRIA", "HUMA", "PLUME", "ZIL", "XPR", "ZETA", "BABYDOGE", "NILA",
+    "ROSE", "VELO", "UAI", "BRETT", "OPEN", "BSB", "TOSHI", "BAS", "ACH", "AXL",
+    "LUR", "ELF", "KAVA", "APR", "IRYS", "EURI", "XUSD", "BARD", "DUSK", "SUSHI",
+    "PEAQ", "COAI", "BDCA", "XAUM",
 }
 
 
@@ -235,4 +246,3 @@ def analyze_snapshot(snapshot: dict[str, Any]) -> dict[str, Any]:
             "min_liquidity_score": 50,
         },
     }
-
