@@ -1,0 +1,34 @@
+{
+  "starting_equity": 1000.0,
+  "ending_equity": 1032.09,
+  "total_return_pct": 3.21,
+  "max_drawdown_pct": 0.78,
+  "daily_win_rate_pct": 75.0,
+  "rebalance_events": 5,
+  "equity_curve": [
+    {
+      "date": "2026-06-12",
+      "equity": 1000.0
+    },
+    {
+      "date": "2026-06-13",
+      "equity": 1009.59
+    },
+    {
+      "date": "2026-06-14",
+      "equity": 1020.44
+    },
+    {
+      "date": "2026-06-15",
+      "equity": 1012.51
+    },
+    {
+      "date": "2026-06-16",
+      "equity": 1032.09
+    }
+  ],
+  "notes": [
+    "Backtest is intentionally simple and reproducible: daily close-to-close, no leverage.",
+    "Live Track 1 execution should add gas, DEX price impact, and TWAK quote slippage checks."
+  ]
+}

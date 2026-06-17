@@ -1,0 +1,19 @@
+[project]
+name = "bnb-regime-guard-skill"
+version = "0.1.0"
+description = "CoinMarketCap Strategy Skill for regime-aware BNB Chain trading signals"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "imgntn" }]
+dependencies = []
+
+[project.scripts]
+regime-guard = "regime_guard.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
