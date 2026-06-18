@@ -29,6 +29,6 @@
   ],
   "notes": [
     "Backtest is intentionally simple and reproducible: daily close-to-close, no leverage.",
-    "Live Track 1 execution should add gas, DEX price impact, and TWAK quote slippage checks."
+    "Live execution should add gas, DEX price impact, and quote slippage checks."
   ]
 }

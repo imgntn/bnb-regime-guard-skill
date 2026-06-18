@@ -41,7 +41,7 @@ What to emphasize:
 - The Skill is reusable by any LLM agent.
 - The output is deterministic and backtestable.
 - The repo includes tests and sample reports.
-- TWAK execution is documented as a future Track 1 extension, not claimed as complete.
+- This BUIDL is Track 2-only; live TWAK execution lives in the separate Track 1 repository.
 
 ## Local Verification
 

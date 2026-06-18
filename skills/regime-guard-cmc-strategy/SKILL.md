@@ -7,7 +7,7 @@ description: Generate a backtestable, regime-aware BNB Chain trading strategy fr
 
 Use this skill when a user asks for a crypto trading strategy, a BNB Hack Track 2 strategy spec, a CMC-backed signal workflow, or a backtestable market regime model for eligible BNB Chain assets.
 
-This is a strategy-generation skill, not a live trading executor. It produces transparent `ROTATE_IN`, `HOLD`, `REDUCE`, and `AVOID` decisions plus target weights and risk controls. For Track 1, these decisions can be routed into Trust Wallet Agent Kit after adding live quote, slippage, and signing checks.
+This is a strategy-generation skill, not a live trading executor. It produces transparent `ROTATE_IN`, `HOLD`, `REDUCE`, and `AVOID` decisions plus target weights and risk controls.
 
 ## Required Data
 
@@ -94,4 +94,3 @@ The strategy report must include:
 - Do not recommend assets outside the contest-eligible or user-approved universe.
 - Reduce exposure when risk controls conflict with signal strength.
 - If data fields are missing, explicitly state which fields are missing and run a reduced-confidence analysis only when the user accepts that limitation.
-

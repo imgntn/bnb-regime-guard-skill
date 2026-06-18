@@ -16,7 +16,7 @@ Regime Guard is a CoinMarketCap Strategy Skill that turns CMC market, technical,
 
 Regime Guard helps an AI agent decide when to rotate into, hold, reduce, or avoid BNB Chain assets using CoinMarketCap-native data. It first classifies the broader market as risk-on, mixed, or risk-off from Fear & Greed, BTC trend, global market trend, and stablecoin dominance. It then scores each eligible token using trend, RSI, MACD, funding, open interest, news/social tone, volatility, and BNB Chain liquidity.
 
-The output is a reproducible strategy report with target weights, confidence, reasons, and risk controls. The repo includes a complete Skill file, deterministic Python strategy engine, sample CMC-style data, a close-to-close backtest runner, tests, and a static demo page. It is intentionally non-custodial and non-executing for Track 2, with a documented path to route approved signals into Trust Wallet Agent Kit for Track 1.
+The output is a reproducible strategy report with target weights, confidence, reasons, and risk controls. The repo includes a complete Skill file, deterministic Python strategy engine, sample CMC-style data, a close-to-close backtest runner, tests, and a static demo page. It is intentionally non-custodial and non-executing for Track 2.
 
 ## Problem
 
@@ -74,6 +74,10 @@ python -m unittest discover -s tests
 ## Demo
 
 Open `docs/index.html` for the static demo. Generate fresh local reports with the commands above.
+
+## Related Project
+
+The separate Track 1 autonomous agent implementation is at `https://github.com/imgntn/bnb-regime-guard-agent`.
 
 ## Repository Link
 

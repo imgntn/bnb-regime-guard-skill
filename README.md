@@ -4,7 +4,7 @@
 
 Track 2 entry for **BNB Hack: AI Trading Agent Edition - CoinMarketCap x Trust Wallet**.
 
-Regime Guard is a CoinMarketCap Strategy Skill that turns CMC market, technical, derivatives, sentiment, and liquidity data into a backtestable BNB Chain spot-rotation strategy. It does not custody funds or execute trades. It produces transparent strategy reports that can later be routed into Trust Wallet Agent Kit for Track 1 execution.
+Regime Guard is a CoinMarketCap Strategy Skill that turns CMC market, technical, derivatives, sentiment, and liquidity data into a backtestable BNB Chain spot-rotation strategy. It does not custody funds, sign transactions, or execute trades.
 
 ## Why This Fits Track 2
 
@@ -82,17 +82,11 @@ The sample files use the same shape expected from live CMC data. Replace them wi
 
 The integration contract is documented in `src/regime_guard/cmc_adapter.py`.
 
-## Track 1 Extension
+## Related Track 1 Agent
 
-For Track 1, wire the generated decisions into Trust Wallet Agent Kit:
+The live Track 1 implementation is kept in a separate repository: `https://github.com/imgntn/bnb-regime-guard-agent`.
 
-1. Query CMC data and generate a strategy report.
-2. Convert `ROTATE_IN` and `REDUCE` deltas into quote-only TWAK swap previews.
-3. Reject any trade violating allowlist, slippage, per-trade notional, daily loss, or drawdown limits.
-4. Execute through TWAK autonomous agent wallet only after all rules pass.
-5. Register the agent wallet with `twak compete register`.
-
-This repo intentionally keeps Track 2 non-executing so the submitted Skill is safe, reproducible, and judgeable.
+This repo intentionally stays Track 2-only so the submitted Skill is safe, reproducible, and judgeable as a strategy specification.
 
 ## Disclaimer
 

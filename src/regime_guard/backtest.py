@@ -61,7 +61,7 @@ def run_backtest(series: list[dict[str, Any]], starting_equity: float = 1000.0) 
         "equity_curve": equity_curve,
         "notes": [
             "Backtest is intentionally simple and reproducible: daily close-to-close, no leverage.",
-            "Live Track 1 execution should add gas, DEX price impact, and TWAK quote slippage checks.",
+            "Live execution should add gas, DEX price impact, and quote slippage checks.",
         ],
     }
 
@@ -74,4 +74,3 @@ def _max_drawdown(values: list[float]) -> float:
         if peak:
             worst = max(worst, (peak - value) / peak)
     return worst
-

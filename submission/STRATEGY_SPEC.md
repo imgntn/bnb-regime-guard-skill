@@ -93,7 +93,7 @@ Negative factors:
 
 - Daily loss stop: 4%.
 - Weekly drawdown stop: 12% in risk-on, 8% otherwise.
-- Slippage cap for future Track 1 execution: 0.75%.
+- Suggested slippage cap for any downstream execution system: 0.75%.
 - No leverage in Track 2.
 - Assets outside the eligible list are always avoided.
 
@@ -112,5 +112,4 @@ The included backtest is daily close-to-close:
 3. Mark portfolio equity.
 4. Repeat for the sample series.
 
-The backtest is intentionally simple and reproducible. A production version should add DEX quote impact, gas, TWAK slippage checks, and actual BSC liquidity routing.
-
+The backtest is intentionally simple and reproducible. A production execution system should add DEX quote impact, gas, slippage checks, and actual BSC liquidity routing.
